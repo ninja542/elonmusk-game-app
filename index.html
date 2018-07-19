@@ -2,8 +2,12 @@
 	<body>
 		<div id="app">
 			<h2>Your role is: {{role}}</h2>
-			<label v-show="role == 'Problem Maker'">Type a problem in 6 words or less: </label><input type="text" v-model="problem" v-show="role == 'Problem Maker'"> <button id="submit" @click="submit">Submit</button>
-			<div v-show="role != 'Elon Musk'" id="showproblem"></div>
+			<!-- problem making part -->
+			<label v-show="role == 'Problem Maker'">Type a problem in 6 words or less: </label><input type="text" v-model="problem" v-show="role == 'Problem Maker'"> <button id="submit" @click="submitproblem" v-show="role == 'Problem Maker'">Submit</button>
+			<!-- idea pitch part -->
+			<h3 v-show="role != 'Elon Musk'" id="showproblem">You need to solve this urgent problem: {{problem}}</h3>
+			<h3 v-show="role == 'Elon Musk'">You need to come up with solutions without any context</h3>
+			<label v-show="role != 'Problem Maker'">Submit a solution in 2 words or less: </label><input type="text" v-show="role != 'Problem Maker'" v-model="solution"> <button id="submitsolution" @click="submitsolution" v-show="role != 'Problem Maker'">Submit</button>
 		</div>
 		<script src="https://vuejs.org/js/vue.js"></script>
 		<script src="game.js"></script>

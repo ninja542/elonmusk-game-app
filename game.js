@@ -1,8 +1,15 @@
 let app = new Vue({
 	el: '#app',
 	data: {
+		player: 'player name',
 		role: 'Problem Maker',
-		problem: ''
+		// roles: Problem Maker, Elon Musk, Tech Innovator
+		problem: '',
+		solution: '',
+		solutions: [
+			{player: 'Player 1', solution: 'two word solution here'},
+			{player: 'Player 2', solution: 'robot submarine'}
+		]
 	},
 	computed: {
 		problemValidation: function() {
@@ -18,8 +25,12 @@ let app = new Vue({
 		}
 	},
 	methods: {
-		submit: function(){
+		submitproblem: function(){
 
+		},
+		submitsolution: function(){
+			this.solutions.push({player: this.player, solution: this.solution});
+			console.log(this.solutions);
 		}
 	}
 });
