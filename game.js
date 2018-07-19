@@ -16,6 +16,11 @@ let app = new Vue({
 				return 'good';
 			}
 		}
+	},
+	methods: {
+		submit: function(){
+
+		}
 	}
 });
 function countWords(essay) {
