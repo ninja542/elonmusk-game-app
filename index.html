@@ -1,2 +1,10 @@
 <html>
+	<body>
+		<div id="app">
+			<h2>Your role is: {{role}}</h2>
+			<label v-show="role == 'Problem Maker'">Type a problem in 6 words or less: </label><input type="text" v-model="problem" v-show="role == 'Problem Maker'"> <button id="submit" @click="submit">Submit</button>
+		</div>
+		<script src="https://vuejs.org/js/vue.js"></script>
+		<script src="game.js"></script>
+	</body>
 </html>
