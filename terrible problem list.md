@@ -51,3 +51,27 @@ whitewashing in Hollywood
 Scarlett Johansson not acting white women
 
 school shootings
+
+elitism from high schoolers on r/A2C
+
+mental health being ignored
+
+men sexually abusing women
+
+cyberwarfare
+
+NSA spying on US citizens
+
+the opiod crisis
+
+lack of clean drinking water
+
+expensive healthcare in US
+
+lack of socioeconomic mobility in US
+
+Jeff Bezos paying warehouse employees awfully
+
+nuclear weapons that could destroy everything
+
+corruption through lobbying of US politicians
