@@ -22,7 +22,7 @@ Social Security running out of money
 
 famine in Yemen
 
-homophobia
+homophobia and transphobia
 
 obesity
 
@@ -39,3 +39,15 @@ apathy towards world news in Americans
 racism
 
 extreme traffic congestion
+
+sexism in Silicon Valley
+
+botched prison executions from intravenous drugs
+
+large amounts of student debt
+
+whitewashing in Hollywood
+
+Scarlett Johansson not acting white women
+
+school shootings
