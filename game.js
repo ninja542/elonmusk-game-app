@@ -1,10 +1,12 @@
+let nplayers = 4;
+let regex1 = RegExp('^\s*$');
 let app = new Vue({
 	el: '#app',
 	data: {
 		player: 'player name',
-		role: 'Problem Maker',
-		// roles: Problem Maker, Elon Musk, Tech Innovator
-		problem: '',
+		role: 'Tech Innovator',
+		// roles: Elon Musk, Tech Innovator
+		problem: 'kids stuck in cave under ocean',
 		solution: '',
 		solutions: [
 			{player: 'Player 1', solution: 'two word solution here'},
@@ -22,15 +24,26 @@ let app = new Vue({
 				document.getElementById('submit').disabled = false;
 				return 'good';
 			}
+		},
+		vote: function() {
+			if(nplayers == this.solutions.length){
+				return true;
+			}
+			else {
+				return false;
+			}
 		}
 	},
 	methods: {
-		submitproblem: function(){
-
-		},
-		submitsolution: function(){
-			this.solutions.push({player: this.player, solution: this.solution});
-			console.log(this.solutions);
+		submitsolution: function() {
+			if(regex1.test(this.solution)) {
+				window.alert('Please do not submit blank answers');
+			}
+			else {
+				this.solutions.push({player: this.player, solution: this.solution});
+				this.solution = '';
+				console.log(this.solutions);
+			}
 		}
 	}
 });
